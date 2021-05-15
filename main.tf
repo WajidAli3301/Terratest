@@ -1,5 +1,5 @@
 # Create a bucket
-resource "aws_s3_bucket" "alsaaaaaaaabmnbmnbitest1-1990-1010213" {
+resource "aws_s3_bucket" "Testingwithterraform" {
 
   versioning {
     enabled = true
@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "alsaaaaaaaabmnbmnbitest1-1990-1010213" {
 # Upload an object to aws test for testing purpose
 resource "aws_s3_bucket_object" "test1-creation" {
 
-  bucket = aws_s3_bucket.alsaaaaaaaabmnbmnbitest1-1990-1010213.id
+  bucket = aws_s3_bucket.Testingwithterraform-1990-1010213.id
 
   key    = "test1.txt"
   content = "${timestamp()}"
@@ -23,7 +23,7 @@ resource "aws_s3_bucket_object" "test1-creation" {
 
 resource "aws_s3_bucket_object" "test2-creation" {
 
-  bucket = aws_s3_bucket.alsaaaaaaaabmnbmnbitest1-1990-1010213.id
+  bucket = aws_s3_bucket.Testingwithterraform-1990-1010213.id
 
   key    = "test2.txt"
   content = "${timestamp()}"
