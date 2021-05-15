@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "alsaaaaaaaabmnbmnbitest1-1990-1010213" {
 
 }
 
-# Upload an object to aws test for 
+# Upload an object to aws test for testing purpose
 resource "aws_s3_bucket_object" "test1-creation" {
 
   bucket = aws_s3_bucket.alsaaaaaaaabmnbmnbitest1-1990-1010213.id
