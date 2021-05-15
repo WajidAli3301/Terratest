@@ -1,7 +1,0 @@
-name: 'Setup Go environment'
-description: 'Setup a Go environment and add it to the PATH'
-runs:
-  using: 'composite'
-  steps: 
-  - run:  go test -v
-    shell: bash
