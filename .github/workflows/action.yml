@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - master
-
-name: Testing for terratest
 jobs:
   test:
     ## We want to define a stratgy for our job
