@@ -18,8 +18,6 @@ terraform.InitAndApply(t, terraformOptions)
 
 name := "testing3301-dash"
 region := "us-east-1"
-aws_access_key_id := AKIA4RZ5UFCANFVAVDNA
-aws_secret_access_key := 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
 aws.AssertS3BucketExists(t, region, name)
 
 
