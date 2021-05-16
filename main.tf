@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "Testing" {
 # Upload an object to aws test for testing purpose
 resource "aws_s3_bucket_object" "test1-creation" {
 
-  bucket = aws_s3_bucket.Testingwithterraform-1990-1010213.id
+  bucket = aws_s3_bucket.Testing.id
 
   key    = "test1.txt"
   content = "${timestamp()}"
