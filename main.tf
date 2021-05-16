@@ -1,10 +1,10 @@
 # Create a bucket
-resource "aws_s3_bucket" "Testingwithterraform" {
+resource "aws_s3_bucket" "Testing" {
 
   versioning {
     enabled = true
   }
-  bucket = "testing3301-dash"
+  bucket = "testing3301-demo-lab"
   tags = {     
     Name = "terratest-aws-s3-example-3301"     
     Environment = "Dev"   
