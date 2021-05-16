@@ -1,4 +1,4 @@
-//This is for testing purpose on Github Actions.
+//This is for testing purpose on Github Actions to test
 package aws
 
 import (
