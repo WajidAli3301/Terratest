@@ -23,7 +23,7 @@ resource "aws_s3_bucket_object" "test1-creation" {
 
 resource "aws_s3_bucket_object" "test2-creation" {
 
-  bucket = aws_s3_bucket.Testingwithterraform-1990-1010213.id
+  bucket = aws_s3_bucket.Testing.id
 
   key    = "test2.txt"
   content = "${timestamp()}"

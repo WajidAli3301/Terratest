@@ -12,11 +12,11 @@ func TestWebServer(t *testing.T) {
     TerraformDir: ".",
     }
 
-//defer terraform.Destroy(t, terraformOptions)
+defer terraform.Destroy(t, terraformOptions)
 
 terraform.InitAndApply(t, terraformOptions)
 
-name := "testing3301-dash"
+name := "testing3301-demo-lab"
 region := "us-east-1"
 aws.AssertS3BucketExists(t, region, name)
 
