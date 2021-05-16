@@ -1,4 +1,4 @@
-# This is for testing puspose
+//This is for testing purpose
 package aws
 
 import (
